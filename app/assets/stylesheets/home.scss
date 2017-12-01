@@ -1,24 +1,24 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.content {
-  height: 2200px;
-}
+// .content {
+//   height: 2200px;
+// }
 
 .header {
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   width: 103%;
-  height: 147px;
+  height: 215px;
   padding-left: 8%;
   padding-right: 8%;
   padding-top: 100px;
   z-index: 2;
 }
 
-body {
-  background-color: #343434;
-  background-image: url('/images/background.jpg');
+.body, html {
+  background-color: grey;
+  background-image: url('/../images/background.jpg');
   background-size: 100%;
   top: 0;
   left: 0;
@@ -96,7 +96,7 @@ h6 {
     bottom: 0;
     left: 0;
     right: 0;
-    height:50px;
+    height:100px;
     margin: 0 auto -2150px;
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
@@ -122,6 +122,7 @@ h6 {
   color: #E4E4E4;
   position: relative;
   display: inline-block;
+  width: auto;
 }
 
 .dropdown-content {
@@ -129,7 +130,7 @@ h6 {
   position: absolute;
   color: white;
   background-color: #3D3D3D;
-  min-width: 130px;
+  min-width: 100%;
   max-width: 100%;
   text-align: left;
   border-radius: 5px 5px 5px 5px;
