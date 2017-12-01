@@ -10,14 +10,13 @@
 
   <body>
 
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+    <!-- <nav class="navbar navbar-toggleable-md navbar-inverse bg-faded">
       <a class="navbar-brand" href="/">
         <img src="/assets/images/silverfox.png" width="60" alt="Logo of a geometric fox head." ></img>
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Navbar</a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
@@ -41,8 +40,59 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
 
-    <%= yield %>
+    <div class="row">
+      <div class="header">
+        <div class="col-md-1">
+          <img src="images/silverfox.png" alt="Logo of a geometric fox head." width="60px">
+        </div>
+        <div class="col-md-11">
+          <div class="center">
+            <h6 class="dropdown">ABOUT |
+              <div class="dropdown-content">
+                <p><a href="indexabout.html" style="color: white;">background</a></p>
+                <p><a href="indexabout.html" style="color: white;">interests</a></p>
+                <p><a href="indexabout.html" style="color: white;">hobbies</a></p>
+                <p><a href="indexabout.html" style="color: white;">skillz</a></p>
+              </div>
+            </h6>
+            <h6 class="dropdown">PORTFOLIO |
+              <div class="dropdown-content">
+                <p><a href="indexportfolio.html" style="color: white;">projects</a></p>
+                <p><a href="indexportfolio.html" style="color: white;">resume</a></p>
+                <p><a href="indexportfolio.html" style="color: white;">education</a></p>
+              </div>
+            </h6>
+            <h6 class="dropdown">PHOTOGRAPHY |
+              <div class="dropdown-content">
+                <p><a href="indexphotography.html" style="color: white;">peace corps</a></p>
+                <p><a href="indexphotography.html" style="color: white;">antarctica</a></p>
+                <p><a href="indexphotography.html" style="color: white;">life</a></p>
+                <p><a href="indexphotography.html" style="color: white;">lifestyle model</a></p>
+              </div>
+            </h6>
+            <h6 class="dropdown">CONTACT
+              <div class="dropdown-content">
+                <p><a href="mailto:mabrooks82@gmail.com" style="color: white;">email me</a></p>
+                <p><a href="tel:5035685393" style="color: white;">phone me</a></p>
+                <p><a href="https://www.linkedin.com/in/michaelallenbrooks/" target="_blank" style="color: white;">linkedin</a></p>
+              </div>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <div class="container4">
+      <div class="footer">
+        <p>Orange you glad I didn't say banana?</p>
+      </div>
+    </div>
+
   </body>
 </html>
