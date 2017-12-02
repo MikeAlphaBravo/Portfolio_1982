@@ -3,7 +3,7 @@
   width: 103%;
   height: 147px;
   padding-top: 100px;
-  padding-left: 8%;
+  padding-left: 11%;
   padding-right: 8%;
 }
 
@@ -14,12 +14,7 @@
   height: 147px;
   padding-top: 100px;
   padding-left: 8%;
-  padding-right: 8%;
-}
-
-
-.navtext {
-  padding-top: -200px;
+  padding-right: 4%;
 }
 
 body, html {
@@ -32,13 +27,10 @@ body, html {
   background-size: cover;
 }
 
-.bg {
-}
-
-h1 {
+#h1special {
   padding: 0px;
   text-shadow: 1px 2px 8px rgba(0,0,0,0.5);
-  font-size: 2002%;
+  font-size: 768%;
 }
 
 h5 {
@@ -96,21 +88,26 @@ h6 {
   width: 100%;
 }
 
-.footer{
+.footer {
     color: #D7D7D7;
     text-align: right;
     padding-right: 8%;
-    padding-top: 5px;
+    padding-top: 12px;
     letter-spacing: 7px;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height:100px;
-    margin: 0 auto -2150px;
+    height:70px;
+    margin: 0 auto -400px;
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     z-index: 2;
+}
+
+#left {
+  text-align: left;
+  padding-left: 8%;
 }
 
 .white {
@@ -127,7 +124,7 @@ h6 {
   margin: 0px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   background-color: white;
-  radius: 5px;
+  border-radius: 10px;
 }
 
 .dropdown {
