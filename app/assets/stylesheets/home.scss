@@ -1,34 +1,44 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-// .content {
-//   height: 2200px;
-// }
+.headerlogo {
+  position: fixed;
+  width: 103%;
+  height: 147px;
+  padding-top: 100px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
 
 .header {
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   width: 103%;
-  height: 215px;
+  height: 147px;
+  padding-top: 100px;
   padding-left: 8%;
   padding-right: 8%;
-  padding-top: 100px;
-  z-index: 2;
 }
 
-.body, html {
+
+.navtext {
+  padding-top: -200px;
+}
+
+body, html {
+  height: 100%;
   background-color: grey;
-  background-image: url('/../images/background.jpg');
-  background-size: 100%;
-  top: 0;
-  left: 0;
-  background-attachment: fixed;
+  background-image: url('background.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg {
 }
 
 h1 {
   padding: 0px;
   text-shadow: 1px 2px 8px rgba(0,0,0,0.5);
-  font-size: 2002%
+  font-size: 2002%;
 }
 
 h5 {
@@ -116,6 +126,8 @@ h6 {
   padding: 0px;
   margin: 0px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: white;
+  radius: 5px;
 }
 
 .dropdown {
