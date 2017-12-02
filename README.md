@@ -5,9 +5,15 @@
 
 ## Beginning of day planning:
 
+Beginning of the day I laid out a plan to incorporate my original portfolio site in a rails application.  I was able to build my model framework and start the implementation process.  I still however need to do a LOT of work on the models.  I did get admin login working on the footer at the bottom.  My plan would be once it is uploaded to Heroku to create my admin login and guest login in case I need to share my access with another person then delete the :registerable from admin.rb
+
+This was my map at the start of the day:
 ![alt text](/public/IMG_0805.jpg)
 
-![alt text](/resources/images/homepage.png)
+This is my map at the end with MANY more things to be working on:
+![alt text](/public/IMG_0806.jpg)
+
+Below is the remainder of my actual README formated for when the project is complete:
 
 #### _Using Ruby on Rails to build my portfolio website, 12.01.2017_
 
