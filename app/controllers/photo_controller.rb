@@ -1,4 +1,0 @@
-class PhotoController < ApplicationController
-
-
-end
