@@ -52,9 +52,9 @@
         <div class="col-md-11">
           <div class="center">
             <div class="navtext">
-              <h6 class="dropdown"><a href="/about" style="color: white;">ABOUT</a> |
+              <h6 class="dropdown"><%= link_to "ABOUT", about_path, class: 'link-to-text-color' %> |
               </h6>
-              <h6 class="dropdown"><a href="/portfolio" style="color: white;">PORTFOLIO</a> |
+              <h6 class="dropdown"><%= link_to "PORTFOLIO", portfolio_path, class: 'link-to-text-color' %> |
                 <div class="dropdown-content">
                   <p><a href="indexportfolio.html" style="color: white;">projects</a></p>
                   <p><a href="indexportfolio.html" style="color: white;">resume</a></p>
@@ -63,7 +63,7 @@
               </h6>
               <h6 class="dropdown"><a href="https://lifenewandimproved.blogspot.com/" target="_blank" style="color: white;">BLOG</a> |
               </h6>
-              <h6 class="dropdown"><a href="/photography" style="color: white;">PHOTOGRAPHY</a> |
+              <h6 class="dropdown"><%= link_to "PHOTOGRAPHY", photography_path, class: 'link-to-text-color' %> |
                 <div class="dropdown-content">
                   <p><a href="indexphotography.html" style="color: white;">peace corps</a></p>
                   <p><a href="indexphotography.html" style="color: white;">antarctica</a></p>

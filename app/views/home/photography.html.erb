@@ -1,49 +1,9 @@
-      <div class="container3">
-        <div class="gallery cf">
-          <div>
-            <img src="images/IMG_9385.JPG">
-          </div>
-          <div>
-            <img src="images\6-24-4 048.jpg">
-          </div>
-          <div>
-            <img src="images\772 winter 04 sand point.jpg">
-          </div>
-          <div>
-            <img src="images\2011-09-17 17.14.26-picsay.jpg">
-          </div>
-          <div>
-            <img src="images\2011-09-17 17.36.22-picsay.jpg">
-          </div>
-          <div>
-            <img src="images\2011-09-22 13.22.04-picsay.jpg">
-          </div>
-          <div>
-            <img src="images\2011-10-05 15.38.59-picsay.jpg">
-          </div>
-          <div>
-            <img src="images\20120711_155448-picsay.jpg">
-          </div>
-          <div>
-            <img src="images\20120821_130856-picsay.jpg">
-          </div>
-          <div>
-            <img src="images\20140616_184034.jpg">
-          </div>
-          <div>
-            <img src="images\IMG_1697.JPG">
-          </div>
-          <div>
-            <img src="images\20140729_181431.jpg">
-          </div>
-          <div>
-            <img src="images\denmark 1 (170).JPG">
-          </div>
-          <div>
-            <img src="images\IMG_1074.JPG">
-          </div>
-          <div>
-            <img src="images\IMG_1075.JPG">
-          </div>
-        </div>
-      </div>
+<div id="gallery">
+
+  <% for photo in @photos %>
+    <div class="photo">
+      <%= link_to photo.title, photo %>
+      <%= link_to image_tag(photo.image.url), photo %>
+      <%= link_to photo.text, photo %>
+    </div>
+  <% end %>
