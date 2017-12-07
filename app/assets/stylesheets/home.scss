@@ -1,5 +1,6 @@
 .headerlogo {
-  position: fixed;
+  position: top fixed;
+  // z-index: 1;
   width: 103%;
   height: 147px;
   padding-top: 100px;
@@ -70,14 +71,14 @@ h6 {
 .container2 {
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 230px;
+  padding-top: 83px;
   width: 100%;
 }
 
 .container3 {
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 230px;
+  padding-top: 83px;
   width: 100%;
 }
 
@@ -102,7 +103,7 @@ h6 {
     margin: 0 auto -400px;
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 
 #left {

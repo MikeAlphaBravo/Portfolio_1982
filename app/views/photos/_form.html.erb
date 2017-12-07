@@ -13,25 +13,34 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :photo_title %>
+    <%= form.text_field :title, id: :album_title %>
   </div>
 
   <div class="field">
-    <%= form.label :caption %>
-    <%= form.text_field :caption, id: :photo_caption %>
+    <%= form.hidden_field(:admin_id, :value => current_admin.id)  %>
   </div>
 
   <div class="field">
     <%= form.label :image %>
-    <%= form.text_field :image, id: :photo_image %>
+    <%= form.text_field :image, id: :image_upload %>
   </div>
 
   <div class="field">
-    <%= form.label :admin_id %>
-    <%= form.number_field :admin_id, id: :photo_admin_id %>
+    <%= form.label :album %>
+    <%= form.hidden_field(:album_id, :value => current_album.id) %>
   </div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+
+
+<form action="/action_page.php" accept="image/gif,image/jpeg">
+  Your image: <input type="file" name="pic" id="pic"><br>
+  <input type="submit" value="Submit">
+</form>
+<form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit">
+</form>

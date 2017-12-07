@@ -5,8 +5,8 @@ Rails.application.routes.draw do
 
   get 'about', to: 'home#about'
   get 'portfolio', to: 'home#portfolio'
-  get 'photography', to: 'home#photography'
+  get 'photography', to: 'albums#index'
 
   resources :albums, :photos
-  
+
 end

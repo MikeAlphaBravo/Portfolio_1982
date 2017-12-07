@@ -1,18 +1,40 @@
-<div class="albums_show">
-
+<div class="container">
   <p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Title:</strong>
-    <%= @album.title %>
-  </p>
+  <div class="albums_show">
 
-  <!-- <p>
-    <strong>Admin:</strong>
-    <%= @album.admin_id %>
-  </p> -->
+    <p>
+      <strong>Title:</strong>
+      <%= @album.title %>
+    </p>
+
+    <p>
+      <%= @album.photos %>
+    </p>
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Caption</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+  <div class="row">
+
+
+
+  </div>
+
+  <br>
+  <% if current_admin %>
+    <%= link_to 'New Photo', new_photo_path %>
+  <% end %>
+
+
 
   <%= link_to 'Edit', edit_album_path(@album) %> |
   <%= link_to 'Back', albums_path %>
-  
+
+  </div>
 </div>
